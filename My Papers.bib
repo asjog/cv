@@ -1,0 +1,482 @@
+
+@article{jog_random_2017,
+	title = {Random forest regression for magnetic resonance image synthesis},
+	volume = {35},
+	issn = {1361-8415},
+	url = {http://www.sciencedirect.com/science/article/pii/S1361841516301578},
+	doi = {10.1016/j.media.2016.08.009},
+	abstract = {By choosing different pulse sequences and their parameters, magnetic resonance imaging (MRI) can generate a large variety of tissue contrasts. This very flexibility, however, can yield inconsistencies with MRI acquisitions across datasets or scanning sessions that can in turn cause inconsistent automated image analysis. Although image synthesis of MR images has been shown to be helpful in addressing this problem, an inability to synthesize both T2-weighted brain images that include the skull and FLuid Attenuated Inversion Recovery (FLAIR) images has been reported. The method described herein, called REPLICA, addresses these limitations. REPLICA is a supervised random forest image synthesis approach that learns a nonlinear regression to predict intensities of alternate tissue contrasts given specific input tissue contrasts. Experimental results include direct image comparisons between synthetic and real images, results from image analysis tasks on both synthetic and real images, and comparison against other state-of-the-art image synthesis methods. REPLICA is computationally fast, and is shown to be comparable to other methods on tasks they are able to perform. Additionally REPLICA has the capability to synthesize both T2-weighted images of the full head and FLAIR images, and perform intensity standardization between different imaging datasets.},
+	urldate = {2016-11-30},
+	journal = {Medical Image Analysis},
+	author = {Jog, Amod and Carass, Aaron and Roy, Snehashis and Pham, Dzung L. and Prince, Jerry L.},
+	month = jan,
+	year = {2017},
+	keywords = {Image enhancement, Image synthesis, MRI, Neuroimaging, Random forests},
+	pages = {475--488},
+	file = {ScienceDirect Snapshot:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/ZTNP9NP3/S1361841516301578.html:text/html}
+}
+
+@incollection{roy_patch_2016,
+	series = {Lecture {Notes} in {Computer} {Science}},
+	title = {Patch {Based} {Synthesis} of {Whole} {Head} {MR} {Images}: {Application} {To} {EPI} {Distortion} {Correction}},
+	copyright = {©2016 Springer International Publishing AG},
+	isbn = {978-3-319-46629-3 978-3-319-46630-9},
+	shorttitle = {Patch {Based} {Synthesis} of {Whole} {Head} {MR} {Images}},
+	url = {http://link.springer.com/chapter/10.1007/978-3-319-46630-9_15},
+	abstract = {Different magnetic resonance imaging pulse sequences are used to generate image contrasts based on physical properties of tissues, which provide different and often complementary information about them. Therefore multiple image contrasts are useful for multimodal analysis of medical images. Often, medical image processing algorithms are optimized for particular image contrasts. If a desirable contrast is unavailable, contrast synthesis (or modality synthesis) methods try to “synthesize” the unavailable constrasts from the available ones. Most of the recent image synthesis methods generate synthetic brain images, while whole head magnetic resonance (MR) images can also be useful for many applications. We propose an atlas based patch matching algorithm to synthesize T2−T2−T\_2-w whole head (including brain, skull, eyes etc.) images from T1−T1−T\_1-w images for the purpose of distortion correction of diffusion weighted MR images. The geometric distortion in diffusion MR images due to inhomogeneous B0B0B\_0 magnetic field are often corrected by non-linearly registering the corresponding b=0b=0b=0 image with zero diffusion gradient to an undistorted T2−T2−T\_2-w image. We show that our synthetic T2−T2−T\_2-w images can be used as a template in absence of a real T2−T2−T\_2-w image. Our patch based method requires multiple atlases with T1T1T\_1 and T2T2T\_2 to be registered to a given target T1T1T\_1. Then for every patch on the target, multiple similar looking matching patches are found on the atlas T1T1T\_1 images and corresponding patches on the atlas T2T2T\_2 images are combined to generate a synthetic T2T2T\_2 of the target. We experimented on image data obtained from 44 patients with traumatic brain injury (TBI), and showed that our synthesized T2T2T\_2 images produce more accurate distortion correction than a state-of-the-art registration based image synthesis method.},
+	language = {en},
+	number = {9968},
+	urldate = {2016-11-30},
+	booktitle = {Simulation and {Synthesis} in {Medical} {Imaging}},
+	publisher = {Springer International Publishing},
+	author = {Roy, Snehashis and Chou, Yi-Yu and Jog, Amod and Butman, John A. and Pham, Dzung L.},
+	editor = {Tsaftaris, Sotirios A. and Gooya, Ali and Frangi, Alejandro F. and Prince, Jerry L.},
+	month = oct,
+	year = {2016},
+	note = {DOI: 10.1007/978-3-319-46630-9\_15},
+	keywords = {Algorithm Analysis and Problem Complexity, Artificial Intelligence (incl. Robotics), Computer Graphics, Distortion correction, EPI, Image Processing and Computer Vision, Image synthesis, Patches, Pattern Recognition, Simulation and Modeling},
+	pages = {146--156},
+	file = {Snapshot:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/P8P77A6Z/978-3-319-46630-9_15.html:text/html}
+}
+
+@article{chen_cross_2017,
+	title = {Cross contrast multi-channel image registration using image synthesis for {MR} brain images},
+	volume = {36},
+	issn = {1361-8415},
+	url = {http://www.sciencedirect.com/science/article/pii/S1361841516301852},
+	doi = {10.1016/j.media.2016.10.005},
+	abstract = {Multi-modal deformable registration is important for many medical image analysis tasks such as atlas alignment, image fusion, and distortion correction. Whereas a conventional method would register images with different modalities using modality independent features or information theoretic metrics such as mutual information, this paper presents a new framework that addresses the problem using a two-channel registration algorithm capable of using mono-modal similarity measures such as sum of squared differences or cross-correlation. To make it possible to use these same-modality measures, image synthesis is used to create proxy images for the opposite modality as well as intensity-normalized images from each of the two available images. The new deformable registration framework was evaluated by performing intra-subject deformation recovery, intra-subject boundary alignment, and inter-subject label transfer experiments using multi-contrast magnetic resonance brain imaging data. Three different multi-channel registration algorithms were evaluated, revealing that the framework is robust to the multi-channel deformable registration algorithm that is used. With a single exception, all results demonstrated improvements when compared against single channel registrations using the same algorithm with mutual information.},
+	urldate = {2016-11-30},
+	journal = {Medical Image Analysis},
+	author = {Chen, Min and Carass, Aaron and Jog, Amod and Lee, Junghoon and Roy, Snehashis and Prince, Jerry L.},
+	month = feb,
+	year = {2017},
+	keywords = {Brain imaging, Image processing, Image synthesis, Multi-channel image registration, Multi-contrast magnetic resonance imaging, Multi-modal image registration, Multi-modal imaging},
+	pages = {2--14},
+	file = {ScienceDirect Snapshot:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/ENXPAANZ/S1361841516301852.html:text/html}
+}
+
+@incollection{jog_self_2016,
+	series = {Lecture {Notes} in {Computer} {Science}},
+	title = {Self {Super}-{Resolution} for {Magnetic} {Resonance} {Images}},
+	copyright = {©2016 Springer International Publishing AG},
+	isbn = {978-3-319-46725-2 978-3-319-46726-9},
+	url = {http://link.springer.com/chapter/10.1007/978-3-319-46726-9_64},
+	abstract = {It is faster and therefore cheaper to acquire magnetic resonance images (MRI) with higher in-plane resolution than through-plane resolution. The low resolution of such acquisitions can be increased using post-processing techniques referred to as super-resolution (SR) algorithms. SR is known to be an ill-posed problem. Most state-of-the-art SR algorithms rely on the presence of external/training data to learn a transform that converts low resolution input to a higher resolution output. In this paper an SR approach is presented that is not dependent on any external training data and is only reliant on the acquired image. Patches extracted from the acquired image are used to estimate a set of new images, where each image has increased resolution along a particular direction. The final SR image is estimated by combining images in this set via the technique of Fourier Burst Accumulation. Our approach was validated on simulated low resolution MRI images, and showed significant improvement in image quality and segmentation accuracy when compared to competing SR methods. SR of FLuid Attenuated Inversion Recovery (FLAIR) images with lesions is also demonstrated.},
+	language = {en},
+	number = {9902},
+	urldate = {2016-11-30},
+	booktitle = {Medical {Image} {Computing} and {Computer}-{Assisted} {Intervention} -- {MICCAI} 2016},
+	publisher = {Springer International Publishing},
+	author = {Jog, Amod and Carass, Aaron and Prince, Jerry L.},
+	editor = {Ourselin, Sebastien and Joskowicz, Leo and Sabuncu, Mert R. and Unal, Gozde and Wells, William},
+	month = oct,
+	year = {2016},
+	note = {DOI: 10.1007/978-3-319-46726-9\_64},
+	keywords = {Artificial Intelligence (incl. Robotics), Computer Graphics, Health Informatics, Image Processing and Computer Vision, Imaging / Radiology, MRI, Pattern Recognition, Self-generated training data, Super-resolution},
+	pages = {553--560},
+	file = {Snapshot:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/AQ2VIET5/978-3-319-46726-9_64.html:text/html}
+}
+
+@inproceedings{zhao_effects_2016,
+	title = {Effects of spatial resolution on image registration},
+	volume = {9784},
+	url = {http://dx.doi.org/10.1117/12.2217322},
+	doi = {10.1117/12.2217322},
+	abstract = {This paper presents a theoretical analysis of the effect of spatial resolution on image registration. Based on the assumption of additive Gaussian noise on the images, the mean and variance of the distribution of the sum of squared differences (SSD) were estimated. Using these estimates, we evaluate a distance between the SSD distributions of aligned images and non-aligned images. The experimental results show that by matching the resolutions of the moving and fixed images one can get a better image registration result. The results agree with our theoretical analysis of SSD, but also suggest that it may be valid for mutual information as well.},
+	urldate = {2016-11-30},
+	author = {Zhao, Can and Carass, Aaron and Jog, Amod and Prince, Jerry L.},
+	year = {2016},
+	pages = {97840Y--97840Y--9}
+}
+
+@article{jog_mr_2015,
+	title = {{MR} image synthesis by contrast learning on neighborhood ensembles},
+	volume = {24},
+	url = {http://www.sciencedirect.com/science/article/pii/S1361841515000699},
+	number = {1},
+	urldate = {2016-11-30},
+	journal = {Medical image analysis},
+	author = {Jog, Amod and Carass, Aaron and Roy, Snehashis and Pham, Dzung L. and Prince, Jerry L.},
+	year = {2015},
+	keywords = {brain, Magnetic resonance imaging, pulse sequence, Synthesis},
+	pages = {63--76},
+	file = {[HTML] from nih.gov:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/FN5BJ2FN/PMC4532609.html:text/html;ScienceDirect Snapshot:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/WP2QTSH8/S1361841515000699.html:text/html;Snapshot:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/PQIW82IW/S1361841515000699.html:text/html}
+}
+
+@incollection{jog_tree-encoded_2015,
+	title = {Tree-{Encoded} {Conditional} {Random} {Fields} for {Image} {Synthesis}},
+	url = {http://link.springer.com/chapter/10.1007/978-3-319-19992-4_58},
+	abstract = {Magnetic resonance imaging (MRI) is the dominant modality for neuroimaging in clinical and research domains. The tremendous versatility of MRI as a modality can lead to large variability in terms of image contrast, resolution, noise, and artifacts. Variability can also manifest itself as missing or corrupt imaging data. Image synthesis has been recently proposed to homogenize and/or enhance the quality of existing imaging data in order to make them more suitable as consistent inputs for processing. We frame the image synthesis problem as an inference problem on a 3-D continuous-valued conditional random field (CRF). We model the conditional distribution as a Gaussian by defining quadratic association and interaction potentials encoded in leaves of a regression tree. The parameters of these quadratic potentials are learned by maximizing the pseudo-likelihood of the training data. Final synthesis is done by inference on this model. We applied this method to synthesize T2T2T\_2-weighted images from T1T1T\_1-weighted images, showing improved synthesis quality as compared to current image synthesis approaches. We also synthesized Fluid Attenuated Inversion Recovery (FLAIR) images, showing similar segmentations to those obtained from real FLAIRs. Additionally, we generated super-resolution FLAIRs showing improved segmentation.},
+	language = {en},
+	urldate = {2016-12-04},
+	booktitle = {Information {Processing} in {Medical} {Imaging}},
+	publisher = {Springer International Publishing},
+	author = {Jog, Amod and Carass, Aaron and Pham, Dzung L. and Prince, Jerry L.},
+	month = jun,
+	year = {2015},
+	note = {DOI: 10.1007/978-3-319-19992-4\_58},
+	pages = {733--745},
+	file = {Full Text PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/WGZIT7JH/Jog et al. - 2015 - Tree-Encoded Conditional Random Fields for Image S.pdf:application/pdf;Snapshot:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/BFZZB2B7/978-3-319-19992-4_58.html:text/html}
+}
+
+@inproceedings{roy_cerebral_2015,
+	title = {Cerebral microbleed segmentation from susceptibility weighted images},
+	volume = {9413},
+	url = {http://dx.doi.org/10.1117/12.2082237},
+	doi = {10.1117/12.2082237},
+	abstract = {Cerebral microbleeds (CMB) are a common marker of traumatic brain injury. Accurate detection and quantification of the CMBs are important for better understanding the progression and prognosis of the injury. Previous microbleed detection methods have suffered from a high rate of false positives, which is time consuming to manually correct. In this paper, we propose a fully automatic, example-based method to segment CMBs from susceptibility-weighted (SWI) scans, where examples from an already segmented template SWI image are used to detect CMBs in a new image. First, multiple radial symmetry transforms (RST) are performed on the template SWI to detect small ellipsoidal structures, which serve as potential microbleed candidates. Then 3D patches from the SWI and its RSTs are combined to form a feature vector at each voxel of the image. A random forest regression is trained using the feature vectors, where the dependent variable is the binary segmentation voxel of the template. Once the regression is learnt, it is applied to a new SWI scan, whose feature vectors contain patches from SWI and its RSTs. Experiments on 26 subjects with mild to severe brain injury show a CMB detection sensitivity of 85:7\%, specificity 99:5\%, and a false positive to true positive ratio of 1:73, which is competitive with published methods while providing a significant reduction in computation time.},
+	urldate = {2016-12-04},
+	author = {Roy, Snehashis and Jog, Amod and Magrath, Elizabeth and Butman, John A. and Pham, Dzung L.},
+	year = {2015},
+	pages = {94131E--94131E--7},
+	file = {Full Text PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/F2DJS8JM/Roy et al. - 2015 - Cerebral microbleed segmentation from susceptibili.pdf:application/pdf}
+}
+
+@inproceedings{jog_multi-output_2015,
+	title = {Multi-output decision trees for lesion segmentation in multiple sclerosis},
+	volume = {9413},
+	url = {http://dx.doi.org/10.1117/12.2082157},
+	doi = {10.1117/12.2082157},
+	abstract = {Multiple Sclerosis (MS) is a disease of the central nervous system in which the protective myelin sheath of the neurons is damaged. MS leads to the formation of lesions, predominantly in the white matter of the brain and the spinal cord. The number and volume of lesions visible in magnetic resonance (MR) imaging (MRI) are important criteria for diagnosing and tracking the progression of MS. Locating and delineating lesions manually requires the tedious and expensive efforts of highly trained raters. In this paper, we propose an automated algorithm to segment lesions in MR images using multi-output decision trees. We evaluated our algorithm on the publicly available MICCAI 2008 MS Lesion Segmentation Challenge training dataset of 20 subjects, and showed improved results in comparison to state-of-the-art methods. We also evaluated our algorithm on an in-house dataset of 49 subjects with a true positive rate of 0.41 and a positive predictive value 0.36.},
+	urldate = {2016-12-04},
+	author = {Jog, Amod and Carass, Aaron and Pham, Dzung L. and Prince, Jerry L.},
+	year = {2015},
+	pages = {94131C--94131C--6},
+	file = {Full Text PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/WJGH4F2S/Jog et al. - 2015 - Multi-output decision trees for lesion segmentatio.pdf:application/pdf}
+}
+
+@inproceedings{he_example-based_2015,
+	title = {An example-based brain {MRI} simulation framework},
+	volume = {9412},
+	url = {http://dx.doi.org/10.1117/12.2075687},
+	doi = {10.1117/12.2075687},
+	abstract = {The simulation of magnetic resonance (MR) images plays an important role in the validation of image analysis algorithms such as image segmentation, due to lack of sufficient ground truth in real MR images. Previous work on MRI simulation has focused on explicitly modeling the MR image formation process. However, because of the overwhelming complexity of MR acquisition these simulations must involve simplifications and approximations that can result in visually unrealistic simulated images. In this work, we describe an example-based simulation framework, which uses an “atlas” consisting of an MR image and its anatomical models derived from the hard segmentation. The relationships between the MR image intensities and its anatomical models are learned using a patch-based regression that implicitly models the physics of the MR image formation. Given the anatomical models of a new brain, a new MR image can be simulated using the learned regression. This approach has been extended to also simulate intensity inhomogeneity artifacts based on the statistical model of training data. Results show that the example based MRI simulation method is capable of simulating different image contrasts and is robust to different choices of atlas. The simulated images resemble real MR images more than simulations produced by a physics-based model.},
+	urldate = {2016-12-04},
+	author = {He, Qing and Roy, Snehashis and Jog, Amod and Pham, Dzung L.},
+	year = {2015},
+	pages = {94120P--94120P--8},
+	file = {Full Text PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/MX6BMCNM/He et al. - 2015 - An example-based brain MRI simulation framework.pdf:application/pdf}
+}
+
+@article{mendrik_mrbrains_2015,
+	title = {{MRBrainS} {Challenge}: {Online} {Evaluation} {Framework} for {Brain} {Image} {Segmentation} in 3T {MRI} {Scans}},
+	volume = {2015},
+	issn = {1687-5265},
+	shorttitle = {{MRBrainS} {Challenge}},
+	url = {http://www.hindawi.com/journals/cin/2015/813696/abs/},
+	doi = {10.1155/2015/813696},
+	abstract = {Many methods have been proposed for tissue segmentation in brain MRI scans. The multitude of methods proposed complicates the choice of one method above others. We have therefore established the MRBrainS online evaluation framework for evaluating (semi)automatic algorithms that segment gray matter (GM), white matter (WM), and cerebrospinal fluid (CSF) on 3T brain MRI scans of elderly subjects (65–80 y). Participants apply their algorithms to the provided data, after which their results are evaluated and ranked. Full manual segmentations of GM, WM, and CSF are available for all scans and used as the reference standard. Five datasets are provided for training and fifteen for testing. The evaluated methods are ranked based on their overall performance to segment GM, WM, and CSF and evaluated using three evaluation metrics (Dice, H95, and AVD) and the results are published on the MRBrainS13 website. We present the results of eleven segmentation algorithms that participated in the MRBrainS13 challenge workshop at MICCAI, where the framework was launched, and three commonly used freeware packages: FreeSurfer, FSL, and SPM. The MRBrainS evaluation framework provides an objective and direct comparison of all evaluated algorithms and can aid in selecting the best performing method for the segmentation goal at hand.},
+	language = {en},
+	urldate = {2016-12-04},
+	journal = {Computational Intelligence and Neuroscience},
+	author = {Mendrik, Adri\&\#xeb and M, Nne and Vincken, Koen L. and Kuijf, Hugo J. and Breeuwer, Marcel and Bouvy, Willem H. and de Bresser, Jeroen and Alansary, Amir and de Bruijne, Marleen and Carass, Aaron and El-Baz, Ayman and Jog, Amod and Katyal, Ranveer and Khan, Ali R. and van der Lijn, Fedde and Mahmood, Qaiser and Mukherjee, Ryan and van Opbroek, Annegreet and Paneri, Sahil and Pereira, S\&\#xe9 and rgio and Persson, Mikael and Rajchl, Martin and Sarikaya, Duygu and Smedby, \&\#xd6 and rjan and Silva, Carlos A. and Vrooman, Henri A. and Vyas, Saurabh and Wang, Chunliang and Zhao, Liang and Biessels, Geert Jan and Viergever, Max A.},
+	month = dec,
+	year = {2015},
+	pages = {e813696},
+	file = {Full Text PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/84CZWN8Z/Mendrik et al. - 2015 - MRBrainS Challenge Online Evaluation Framework fo.pdf:application/pdf;Snapshot:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/86EEIDSN/813696.html:application/xhtml+xml}
+}
+
+@inproceedings{jog_random_2014,
+	title = {Random forest {FLAIR} reconstruction from {T}1, {T}2, and {PD}-weighted {MRI}},
+	doi = {10.1109/ISBI.2014.6868061},
+	abstract = {Fluid Attenuated Inversion Recovery (FLAIR) is a commonly acquired pulse sequence for multiple sclerosis (MS) patients. MS white matter lesions appear hyperintense in FLAIR images and have excellent contrast with the surrounding tissue. Hence, FLAIR images are commonly used in automated lesion segmentation algorithms to easily and quickly delineate the lesions. This expedites the lesion load computation and correlation with disease progression. Unfortunately for numerous reasons the acquired FLAIR images can be of a poor quality and suffer from various artifacts. In the most extreme cases the data is absent, which poses a problem when consistently processing a large data set. We propose to fill in this gap by reconstructing a FLAIR image given the corresponding T1-weighted, T2-weighted, and PD-weighted images of the same subject using random forest regression. We show that the images we produce are similar to true high quality FLAIR images and also provide a good surrogate for tissue segmentation.},
+	booktitle = {2014 {IEEE} 11th {International} {Symposium} on {Biomedical} {Imaging} ({ISBI})},
+	author = {Jog, A. and Carass, A. and Pham, D. L. and Prince, J. L.},
+	month = apr,
+	year = {2014},
+	keywords = {acquired FLAIR images, acquired pulse sequence, automated lesion segmentation algorithms, biological tissues, biomedical MRI, brain, disease progression, diseases, FLAIR image reconstruction, fluid attenuated inversion recovery, high quality FLAIR images, hyperintense, image reconstruction, Image resolution, image segmentation, image sequences, lesion load computation, Lesions, medical image processing, MS white matter lesions, multiple sclerosis patients, PD-weighted MRI, random forest flair reconstruction, random forest regression, random processes, regression, regression analysis, Regression tree analysis, T1-weighted MRI, T2-weighted MRI, tissue segmentation, Training data, Vegetation},
+	pages = {1079--1082},
+	file = {IEEE Xplore Abstract Record:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/6RTCS52K/6868061.html:text/html;IEEE Xplore Full Text PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/QWSPI8GN/Jog et al. - 2014 - Random forest FLAIR reconstruction from T1, T2, an.pdf:application/pdf}
+}
+
+@inproceedings{jog_improving_2014,
+	title = {Improving magnetic resonance resolution with supervised learning},
+	doi = {10.1109/ISBI.2014.6868038},
+	abstract = {Despite ongoing improvements in magnetic resonance (MR) imaging (MRI), considerable clinical and, to a lesser extent, research data is acquired at lower resolutions. For example 1 mm isotropic acquisition of T1-weighted (T1-w) Magnetization Prepared Rapid Gradient Echo (MPRAGE) is standard practice, however T2-weighted (T2-w) - because of its longer relaxation times (and thus longer scan time) - is still routinely acquired with slice thicknesses of 2-5 mm and in-plane resolution of 2-3 mm. This creates obvious fundamental problems when trying to process T1-w and T2-w data in concert. We present an automated supervised learning algorithm to generate high resolution data. The framework is similar to the brain hallucination work of Rousseau, taking advantage of new developments in regression based image reconstruction. We present validation on phantom and real data, demonstrating the improvement over state-of-the-art super-resolution techniques.},
+	booktitle = {2014 {IEEE} 11th {International} {Symposium} on {Biomedical} {Imaging} ({ISBI})},
+	author = {Jog, A. and Carass, A. and Prince, J. L.},
+	month = apr,
+	year = {2014},
+	keywords = {automated supervised learning algorithm, biomedical MRI, brain, brain hallucination, image reconstruction, Image resolution, Interpolation, isotropic acquisition, Magnetic resonance imaging, magnetic resonance resolution improvement, medical image processing, MRI, phantom, phantoms, PSNR, regression, regression based image reconstruction, Regression tree analysis, size 2 mm to 5 mm, Super-resolution, T1-weighted magnetization prepared rapid gradient echo, unsupervised learning},
+	pages = {987--990},
+	file = {IEEE Xplore Abstract Record:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/2URJASSK/6868038.html:text/html;IEEE Xplore Full Text PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/VHER5X3R/Jog et al. - 2014 - Improving magnetic resonance resolution with super.pdf:application/pdf}
+}
+
+@inproceedings{roy_mr_2014,
+	title = {{MR} to {CT} registration of brains using image synthesis},
+	volume = {9034},
+	url = {http://dx.doi.org/10.1117/12.2043954},
+	doi = {10.1117/12.2043954},
+	abstract = {Computed tomography (CT) is the preferred imaging modality for patient dose calculation for radiation therapy. Magnetic resonance (MR) imaging (MRI) is used along with CT to identify brain structures due to its superior soft tissue contrast. Registration of MR and CT is necessary for accurate delineation of the tumor and other structures, and is critical in radiotherapy planning. Mutual information (MI) or its variants are typically used as a similarity metric to register MRI to CT. However, unlike CT, MRI intensity does not have an accepted calibrated intensity scale. Therefore, MI-based MR-CT registration may vary from scan to scan as MI depends on the joint histogram of the images. In this paper, we propose a fully automatic framework for MR-CT registration by synthesizing a synthetic CT image from MRI using a co-registered pair of MR and CT images as an atlas. Patches of the subject MRI are matched to the atlas and the synthetic CT patches are estimated in a probabilistic framework. The synthetic CT is registered to the original CT using a deformable registration and the computed deformation is applied to the MRI. In contrast to most existing methods, we do not need any manual intervention such as picking landmarks or regions of interests. The proposed method was validated on ten brain cancer patient cases, showing 25\% improvement in MI and correlation between MR and CT images after registration compared to state-of-the-art registration methods.},
+	urldate = {2016-12-04},
+	author = {Roy, Snehashis and Carass, Aaron and Jog, Amod and Prince, Jerry L. and Lee, Junghoon},
+	year = {2014},
+	pages = {903419--903419--8},
+	file = {Full Text PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/7SZEUT96/Roy et al. - 2014 - MR to CT registration of brains using image synthe.pdf:application/pdf}
+}
+
+@inproceedings{roy_example_2014,
+	title = {Example based lesion segmentation},
+	volume = {9034},
+	url = {http://dx.doi.org/10.1117/12.2043917},
+	doi = {10.1117/12.2043917},
+	abstract = {Automatic and accurate detection of white matter lesions is a significant step toward understanding the progression of many diseases, like Alzheimer’s disease or multiple sclerosis. Multi-modal MR images are often used to segment T2 white matter lesions that can represent regions of demyelination or ischemia. Some automated lesion segmentation methods describe the lesion intensities using generative models, and then classify the lesions with some combination of heuristics and cost minimization. In contrast, we propose a patch-based method, in which lesions are found using examples from an atlas containing multi-modal MR images and corresponding manual delineations of lesions. Patches from subject MR images are matched to patches from the atlas and lesion memberships are found based on patch similarity weights. We experiment on 43 subjects with MS, whose scans show various levels of lesion-load. We demonstrate significant improvement in Dice coefficient and total lesion volume compared to a state of the art model-based lesion segmentation method, indicating more accurate delineation of lesions.},
+	urldate = {2016-12-04},
+	author = {Roy, Snehashis and He, Qing and Carass, Aaron and Jog, Amod and Cuzzocreo, Jennifer L. and Reich, Daniel S. and Prince, Jerry and Pham, Dzung},
+	year = {2014},
+	pages = {90341Y--90341Y--8},
+	file = {Full Text PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/42J6HXTR/Roy et al. - 2014 - Example based lesion segmentation.pdf:application/pdf}
+}
+
+@incollection{roy_atlas_2013,
+	title = {Atlas {Based} {Intensity} {Transformation} of {Brain} {MR} {Images}},
+	url = {http://link.springer.com/chapter/10.1007/978-3-319-02126-3_6},
+	abstract = {Magnetic resonance imaging (MRI) is a noninvasive modality that has been widely used to image the structure of the human brain. Unlike reconstructed x-ray computed tomography images, MRI intensities do not possess a calibrated scale, and the images suffer from wide variability in intensity contrasts due to scanner calibration and pulse sequence variations. Most MR image processing tasks use intensities as the principal feature and therefore the results can vary widely according to the actual tissue intensity contrast. Since it is difficult to control the MR scanner acquisition protocols in multi-scanner cross-sectional studies, results achieved using image processing tools are often difficult to compare in such studies. Similar issues can happen in longitudinal studies, as scanners undergo upgrades or improvements in pulse sequences, leading to new imaging sequences. We propose a novel probabilistic model to transform image contrasts by matching patches of a subject image to a set of patches from a multi-contrast atlas. Although the transformed images are not for diagnostic purpose, the use of such contrast transforms is shown for two applications, (a) to improve segmentation consistency across scanners and pulse sequences, (b) to improve registration accuracy between multi-contrast image pairs by transforming the subject image to the contrast of the reference image and then registering the transformed subject image to the reference image. Contrary to previous intensity transformation methods, our technique does not need any information about landmarks, pulse sequence parameters or imaging equations. It is shown to provide more consistent segmentation across scanners compared to state-of-the-art methods.},
+	language = {en},
+	urldate = {2016-12-04},
+	booktitle = {Multimodal {Brain} {Image} {Analysis}},
+	publisher = {Springer International Publishing},
+	author = {Roy, Snehashis and Jog, Amod and Carass, Aaron and Prince, Jerry L.},
+	month = sep,
+	year = {2013},
+	note = {DOI: 10.1007/978-3-319-02126-3\_6},
+	pages = {51--62},
+	file = {Full Text PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/XMA9UKXG/Roy et al. - 2013 - Atlas Based Intensity Transformation of Brain MR I.pdf:application/pdf;Snapshot:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/WA9TAFBD/978-3-319-02126-3_6.html:text/html}
+}
+
+@patent{jog_pulse_2015,
+	title = {Pulse sequence-based intensity normalization and contrast synthesis for magnetic resonance imaging},
+	url = {http://www.google.com/patents/US20150016701},
+	abstract = {According to one or more of the embodiments herein, a subject image of biological tissue is acquired from a pulse sequence of a magnetic resonance imaging (MRI) device, and one or more pulse sequence parameters used to acquire the subject image may be estimated based on a relationship between the subject image and the biological tissue. A new atlas image may then be synthesized using the pulse sequence and the estimated pulse sequence parameters of the subject image, and an intensity transformation between the new atlas image and a desired reference atlas image may be learned. As such, a desired subject image may be synthesized by applying the intensity transformation to the subject image.},
+	nationality = {United States},
+	assignee = {The Johns Hopkins University},
+	number = {US20150016701 A1},
+	urldate = {2016-12-04},
+	author = {Jog, Amod and Roy, Snehashis and Carass, Aaron and Prince, Jerry L.},
+	month = jan,
+	year = {2015},
+	note = {U.S. Classification 382/131; International Classification G06T11/00; Cooperative Classification G01R33/5608, G06T11/003},
+	file = {Google Patents PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/FNMPUM72/Jog et al. - 2015 - Pulse sequence-based intensity normalization and c.pdf:application/pdf}
+}
+
+@inproceedings{jog_magnetic_2013,
+	title = {Magnetic resonance image synthesis through patch regression},
+	doi = {10.1109/ISBI.2013.6556484},
+	abstract = {Magnetic resonance imaging (MRI) is widely used for analyzing human brain structure and function. MRI is extremely versatile and can produce different tissue contrasts as required by the study design. For reasons such as patient comfort, cost, and improving technology, certain tissue contrasts for a cohort analysis may not have been acquired during the imaging session. This missing pulse sequence hampers consistent neuroanatomy research. One possible solution is to synthesize the missing sequence. This paper proposes a data-driven approach to image synthesis, which provides equal, if not superior synthesis compared to the state-of-the-art, in addition to being an order of magnitude faster. The synthesis transformation is done on image patches by a trained bagged ensemble of regression trees. Validation was done by synthesizing T2-weighted contrasts from T1-weighted scans, for phantoms and real data. We also synthesized 3 Tesla T1-weighted magnetization prepared rapid gradient echo (MPRAGE) images from 1.5 Tesla MPRAGEs to demonstrate the generality of this approach.},
+	booktitle = {2013 {IEEE} 10th {International} {Symposium} on {Biomedical} {Imaging}},
+	author = {Jog, A. and Roy, S. and Carass, A. and Prince, J. L.},
+	month = apr,
+	year = {2013},
+	keywords = {biomedical MRI, brain, data-driven approach, Histograms, human brain function analysis, human brain structure analysis, Image generation, image matching, image patches, image sequences, Image synthesis, magnetic flux density 1.5 tesla, magnetic flux density 3 tesla, magnetic resonance image synthesis, Magnetic resonance imaging, magnetisation, medical image processing, MPRAGE images, MRI, neuroanatomy research, neurophysiology, Noise, patch regression, phantoms, pulse sequence, rapid gradient echo images, regression, regression analysis, Regression tree analysis, regression trees, synthesis transformation, T1-weighted magnetization, T1-weighted scans, T2-weighted contrasts, tissue contrasts, tissue engineering, Training},
+	pages = {350--353},
+	file = {IEEE Xplore Abstract Record:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/HPMVMJF8/6556484.html:text/html;IEEE Xplore Full Text PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/NXDMJ3AF/Jog et al. - 2013 - Magnetic resonance image synthesis through patch r.pdf:application/pdf}
+}
+
+@inproceedings{jog_pulse_2013,
+	title = {Pulse sequence based multi-acquisition {MR} intensity normalization},
+	volume = {8669},
+	url = {http://dx.doi.org/10.1117/12.2007062},
+	doi = {10.1117/12.2007062},
+	abstract = {Intensity normalization is an important preprocessing step in magnetic resonance (MR) image analysis. In MR
+images (MRI), the observed intensities are primarily dependent on (1) intrinsic magnetic resonance properties of
+the tissues such as proton density (PD), longitudinal and transverse relaxation times (T1 and T2 respectively),
+and (2) the scanner imaging parameters like echo time (TE), repeat time (TR), and flip angle (α). We propose a
+method which utilizes three co-registered images with different contrast mechanisms (PD-weighted, T2-weighted
+and T1-weighted) to first estimate the imaging parameters and then estimate PD, T1, and T2 values. We then
+normalize the subject intensities to a reference by simply applying the pulse sequence equation of the reference
+image to the subject tissue parameters. Previous approaches to solve this problem have primarily focused on
+matching the intensity histograms of the subject image to a reference histogram by different methods. The
+fundamental drawback of these methods is their failure to respect the underlying imaging physics and tissue
+biology. Our method is validated on phantoms and we show improvement of normalization on real images of
+human brains.},
+	urldate = {2016-12-04},
+	author = {Jog, Amod and Roy, Snehashis and Carass, Aaron and Prince, Jerry L.},
+	year = {2013},
+	pages = {86692H--86692H--8},
+	file = {Full Text PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/ETICCU6T/Jog et al. - 2013 - Pulse sequence based multi-acquisition MR intensit.pdf:application/pdf}
+}
+
+@article{curry_objective_2012,
+	title = {Objective assessment in residency-based training for transoral robotic surgery},
+	volume = {122},
+	issn = {1531-4995},
+	url = {http://onlinelibrary.wiley.com/doi/10.1002/lary.23369/abstract},
+	doi = {10.1002/lary.23369},
+	abstract = {Objectives/Hypothesis:
+
+To develop a robotic surgery training regimen integrating objective skill assessment for otolaryngology and head and neck surgery trainees consisting of training modules of increasing complexity leading up to procedure-specific training. In particular, we investigated applications of such a training approach for surgical extirpation of oropharyngeal tumors via a transoral approach using the da Vinci robotic system.
+
+
+Study Design:
+
+Prospective blinded data collection and objective evaluation (Objective Structured Assessment of Technical Skills [OSATS]) of three distinct phases using the da Vinci robotic surgical system in an academic university medical engineering/computer science laboratory setting.
+
+
+Methods:
+
+Between September 2010 and July 2011, eight otolaryngology–head and neck surgery residents and four staff experts from an academic hospital participated in three distinct phases of robotic surgery training involving 1) robotic platform operational skills, 2) set up of the patient side system, and 3) a complete ex vivo surgical extirpation of an oropharyngeal tumor located in the base of tongue. Trainees performed multiple (four) approximately equally spaced training sessions in each stage of the training. In addition to trainees, baseline performance data were obtained for the experts. Each surgical stage was documented with motion and event data captured from the application programming interfaces of the da Vinci system, as well as separate video cameras as appropriate. All data were assessed using automated skill measures of task efficiency and correlated with structured assessment (OSATS and similar Likert scale) from three experts to assess expert and trainee differences and compute automated and expert assessed learning curves.
+
+
+Results:
+
+Our data show that such training results in an improved didactic robotic knowledge base and improved clinical efficiency with respect to the set up and console manipulation. Experts (e.g., average OSATS, 25; standard deviation [SD], 3.1; module 1, suturing) and trainees (average OSATS, 15.9; SD, 3.9; week 1) are well separated at the beginning of the training, and the separation reduces significantly (expert average OSATS, 27.6; SD, 2.7; trainee average OSATS, 24.2; SD, 6.8; module 3) at the conclusion of the training. Learning curves in each of the three stages show diminishing differences between the experts and trainees, which is also consistent with expert assessment. Subjective assessment by experts verified the clinical utility of the module 3 surgical environment, and a survey of trainees consistently rated the curriculum as very useful in progression to human operating room assistance.
+
+
+Conclusions:
+
+Structured curricular robotic surgery training with objective assessment promises to reduce the overhead for mentors, allow detailed assessment of human-machine interface skills, and create customized training models for individualized training. This preliminary study verifies the utility of such training in improving human-machine operations skills (module 1), and operating room and surgical skills (modules 2 and 3). In contrast to current coarse measures of total operating time and subjective assessment of error for short mass training sessions, these methods may allow individual tasks to be removed from the trainee regimen when skill levels are within the standard deviation of the experts for these tasks, which can greatly enhance overall efficiency of the training regimen and allow time for additional and more complex training to be incorporated in the same time frame. Laryngoscope, 2012},
+	language = {en},
+	number = {10},
+	urldate = {2016-12-04},
+	journal = {The Laryngoscope},
+	author = {Curry, Martin and Malpani, Anand and Li, Ryan and Tantillo, Thomas and Jog, Amod and Blanco, Ray and Ha, Patrick K. and Califano, Joseph and Kumar, Rajesh and Richmon, Jeremy},
+	month = oct,
+	year = {2012},
+	keywords = {Head and neck, oral cavity, oropharynx, robotic surgery, robotic surgery training, transoral robotic surgery},
+	pages = {2184--2192},
+	file = {Full Text PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/2GDUFW5D/Curry et al. - 2012 - Objective assessment in residency-based training f.pdf:application/pdf;Snapshot:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/24QF9NNH/abstract.html:text/html}
+}
+
+@patent{kumar_method_2014,
+	title = {Method and system for analyzing a task trajectory},
+	url = {http://www.google.com/patents/US20140378995},
+	abstract = {A computer-implemented method of analyzing a sample task trajectory including obtaining, with one or more computers, position information of an instrument in the sample task trajectory, obtaining, with the one or more computers, pose information of the instrument in the sample task trajectory, comparing, with the one or more computers, the position information and the pose information for the sample task trajectory with reference position information and reference pose information of the instrument for a reference task trajectory, determining, with the one or more computers, a skill assessment for the sample task trajectory based on the comparison, and outputting, with the one or more computers, the determined skill assessment for the sample task trajectory.},
+	nationality = {United States},
+	assignee = {Intuitive Surgical Operations, Inc.,},
+	number = {US20140378995 A1},
+	urldate = {2016-12-04},
+	author = {Kumar, Rajesh and Hager, Gregory D. and Jog, Amod S. and Gao, Yixin and Liu, May and DiMaio, Simon Peter and Itkowitz, Brandon and Curet, Myriam},
+	month = dec,
+	year = {2014},
+	note = {U.S. Classification 606/130; International Classification A61B5/06, A61B19/00; Cooperative Classification A61B34/30, A61B19/2203, A61B2034/107, A61B5/065},
+	file = {Google Patents PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/SH9BGUTG/Kumar et al. - 2014 - Method and system for analyzing a task trajectory.pdf:application/pdf}
+}
+
+@article{kumar_objective_2012,
+	title = {Objective measures for longitudinal assessment of robotic surgery training},
+	volume = {143},
+	issn = {0022-5223},
+	url = {http://www.sciencedirect.com/science/article/pii/S0022522311012748},
+	doi = {10.1016/j.jtcvs.2011.11.002},
+	abstract = {Objectives
+Current robotic training approaches lack the criteria for automatically assessing and tracking (over time) technical skills separately from clinical proficiency. We describe the development and validation of a novel automated and objective framework for the assessment of training.
+Methods
+We are able to record all system variables (stereo instrument video, hand and instrument motion, buttons and pedal events) from the da Vinci surgical systems using a portable archival system integrated with the robotic surgical system. Data can be collected unsupervised, and the archival system does not change system operations in any way. Our open-ended multicenter protocol is collecting surgical skill benchmarking data from 24 trainees to surgical proficiency, subject only to their continued availability. Two independent experts performed structured (objective structured assessment of technical skills) assessments on longitudinal data from 8 novice and 4 expert surgeons to generate baseline data for training and to validate our computerized statistical analysis methods in identifying the ranges of operational and clinical skill measures.
+Results
+Objective differences in operational and technical skill between known experts and other subjects were quantified. The longitudinal learning curves and statistical analysis for trainee performance measures are reported. Graphic representations of the skills developed for feedback to the trainees are also included.
+Conclusions
+We describe an open-ended longitudinal study and automated motion recognition system capable of objectively differentiating between clinical and technical operational skills in robotic surgery. Our results have demonstrated a convergence of trainee skill parameters toward those derived from expert robotic surgeons during the course of our training protocol.},
+	number = {3},
+	urldate = {2016-12-04},
+	journal = {The Journal of Thoracic and Cardiovascular Surgery},
+	author = {Kumar, Rajesh and Jog, Amod and Vagvolgyi, Balazs and Nguyen, Hiep and Hager, Gregory and Chen, Chi Chiung Grace and Yuh, David},
+	month = mar,
+	year = {2012},
+	pages = {528--534},
+	file = {ScienceDirect Full Text PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/RWAR4SJS/Kumar et al. - 2012 - Objective measures for longitudinal assessment of .pdf:application/pdf;ScienceDirect Snapshot:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/UQ4DGH4U/S0022522311012748.html:text/html}
+}
+
+@article{kumar_assessing_2012,
+	title = {Assessing system operation skills in robotic surgery trainees},
+	volume = {8},
+	issn = {1478-596X},
+	url = {http://onlinelibrary.wiley.com/doi/10.1002/rcs.449/abstract},
+	doi = {10.1002/rcs.449},
+	abstract = {Background
+With increased use of robotic surgery in specialties including urology, development of training methods has also intensified. However, current approaches lack the ability to discriminate between operational and surgical skills.
+Methods
+An automated recording system was used to longitudinally (monthly) acquire instrument motion/telemetry and video for four basic surgical skills – suturing, manipulation, transection, and dissection. Statistical models were then developed to discriminate the human–machine skill differences between practicing expert surgeons and trainees.
+Results
+Data from six trainees and two experts was analyzed to validate the first ever statistical models of operational skills, and demonstrate classification with very high accuracy (91.7\% for masters, and 88.2\% for camera motion) and sensitivity.
+Conclusions
+The paper reports on a longitudinal study aimed at tracking robotic surgery trainees to proficiency, and methods capable of objectively assessing operational and technical skills that would be used in assessing trainee progress at the participating institutions. Copyright © 2011 John Wiley \& Sons, Ltd.},
+	language = {en},
+	number = {1},
+	urldate = {2016-12-04},
+	journal = {The International Journal of Medical Robotics and Computer Assisted Surgery},
+	author = {Kumar, Rajesh and Jog, Amod and Malpani, Anand and Vagvolgyi, Balazs and Yuh, David and Nguyen, Hiep and Hager, Gregory and Chen, Chi Chiung Grace},
+	month = mar,
+	year = {2012},
+	keywords = {automated skill assessment, objective skill assessment, robotic surgery training},
+	pages = {118--124},
+	file = {Full Text PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/ZZR42MFT/Kumar et al. - 2012 - Assessing system operation skills in robotic surge.pdf:application/pdf;Snapshot:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/FAS744S4/abstract.html:text/html}
+}
+
+@inproceedings{gao_towards_2011,
+	title = {Towards validation of robotic surgery training assessment across training platforms},
+	doi = {10.1109/IROS.2011.6094662},
+	abstract = {Robotic surgery is increasingly popular for a wide range of complex minimally invasive surgery procedures. To improve robotic surgery training, a skills trainer simulator called dV-Trainer has recently been introduced, and a da Vinci Skills Simulator is in advanced evaluation. These platforms report a range of time and motion based task metrics and literature has investigated the validity of these metrics in training studies. However, the lack of a cross-platform data collection system has so far prevented a cross-platform investigation. Using a new architecture for collecting cross-platform motion data, we present the first study investigating whether metrics previously validated in simulation environments also hold in training exercises with a real robotic system. Preliminary experiments for an anastomosis needle throwing task in both simulated and real robotic environments are presented, and corresponding performance metrics for both proficient and trainee users are reported.},
+	booktitle = {2011 {IEEE}/{RSJ} {International} {Conference} on {Intelligent} {Robots} and {Systems}},
+	author = {Gao, Y. and Sedef, M. and Jog, A. and Peng, P. and Choti, M. and Hager, G. and Berkley, J. and Kumar, R.},
+	month = sep,
+	year = {2011},
+	keywords = {Data models, Instruments, Measurement, Needles, Robots, Surgery, Training},
+	pages = {2539--2544},
+	file = {IEEE Xplore Abstract Record:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/IGDW9TRM/6094662.html:text/html;IEEE Xplore Full Text PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/CDPGWFAZ/Gao et al. - 2011 - Towards validation of robotic surgery training ass.pdf:application/pdf}
+}
+
+@inproceedings{jog_towards_2011,
+	title = {Towards integrating task information in skills assessment for dexterous tasks in surgery and simulation},
+	doi = {10.1109/ICRA.2011.5979967},
+	abstract = {With the increasing popularity of robotic surgery, several studies in the literature have investigated automatically assessing skill measures based on motion and video data captured from these systems. A range of simulation environments for robotic surgery are now in development. Skill assessment in these environments has so far only focused on evaluating the utility and validity of statistics such as task completion time, and instrument distance measured during a simulated task. We present the first work using motion data from a robotic surgery simulation environment in development for classifying users of varying skills and detecting completion of trainee. Given the standardized environment of the simulator, and the availability of the ground truth, skill measurements and feedback based on task motion hold the promise of effective automated objective assessment. Based on motion data of a simulated manipulation task from 17 users of varying skills, we demonstrate binary classification (proficient vs. trainee) of user skill with 87.5\% accuracy. Alternate measures based on instrument pose more relevant in the simulated environment including a new measure of motion efficiency are also presented and evaluated.},
+	booktitle = {2011 {IEEE} {International} {Conference} on {Robotics} and {Automation}},
+	author = {Jog, A. and Itkowitz, B. and Liu, May and DiMaio, S. and Hager, G. and Curet, M. and Kumar, R.},
+	month = may,
+	year = {2011},
+	keywords = {Accuracy, Cameras, control engineering computing, dexterous manipulators, dexterous tasks, digital simulation, Instruments, medical control systems, medical robotics, motion data, robotic surgery, Robots, simulation environments, skills assessment, Surgery, task information integration, Training, Trajectory, video data},
+	pages = {5273--5278},
+	file = {IEEE Xplore Abstract Record:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/H6WK6KCX/5979967.html:text/html;IEEE Xplore Full Text PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/N3IN3WRU/Jog et al. - 2011 - Towards integrating task information in skills ass.pdf:application/pdf}
+}
+
+@patent{kumar_system_2014,
+	title = {System and method for the evaluation of or improvement of minimally invasive surgery skills},
+	url = {http://www.google.com/patents/US20140287393},
+	abstract = {A system to assist in at least one of the evaluation of or the improvement of skills to perform minimally invasive surgery includes a minimally invasive surgical system, a video system arranged to record at least one of a user's interaction with the minimally invasive surgical system or tasks performed with the minimally invasive surgical system, and a data storage and processing system in communication with the minimally invasive surgical system and in communication with the video system. The minimally invasive surgical system provides at least one of motion data, ergonomics adjustment data, electrical interface interaction data or mechanical interface interaction data of at least a component of the minimally invasive surgical system in conjunction with time registered video signals from the video system. The data storage and processing system processes the at least one of motion data, ergonomics adjustment data, electrical interface interaction data or mechanical interface interaction data to provide a performance metric in conjunction with the time registered video signals to be made available to an expert for evaluation.},
+	nationality = {United States},
+	assignee = {The Johns Hopkins University},
+	number = {US20140287393 A1},
+	urldate = {2016-12-04},
+	author = {Kumar, Rajesh and Hager, Gregory D. and Jog, Amod S. and Yuh, David D.},
+	month = sep,
+	year = {2014},
+	note = {U.S. Classification 434/262; International Classification G09B23/28, G09B5/02; Cooperative Classification A61B34/35, G09B23/285, G09B5/02, G09B23/28, A61B2017/00707},
+	file = {Google Patents PDF:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/PE4UWTVC/Kumar et al. - 2014 - System and method for the evaluation of or improve.pdf:application/pdf}
+}
+
+@misc{_midas_????,
+	title = {{MIDAS} {Journal} - {The} {Surgical} {Assistant} {Workstation} ({SAW}) in {Minimally}-{Invasive} {Surgery} and {Microsurgery}},
+	url = {http://www.midasjournal.org/browse/publication/734},
+	urldate = {2016-12-04},
+	file = {MIDAS Journal - The Surgical Assistant Workstation (SAW) in Minimally-Invasive Surgery and Microsurgery:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/AN44T6MK/734.html:text/html}
+}
+
+@misc{_midas_????-1,
+	title = {{MIDAS} {Journal} - {The} {Surgical} {Assistant} {Workstation} ({SAW}) in {Minimally}-{Invasive} {Surgery} and {Microsurgery}},
+	url = {http://www.midasjournal.org/browse/publication/734},
+	urldate = {2016-12-04},
+	file = {MIDAS Journal - The Surgical Assistant Workstation (SAW) in Minimally-Invasive Surgery and Microsurgery:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/ESUKC2NF/734.html:text/html}
+}
+
+@inproceedings{jog_classifying_2009,
+	title = {Classifying ayurvedic pulse signals via consensus locally linear embedding},
+	isbn = {978-989-8111-65-4},
+	abstract = {In this paper, we present a novel method for analysis of Ayurvedic pulse signals via a recently developed non-linear dimensionality reduction scheme called Consensus Locally Linear Embedding (C-LLE). Pulse Based Diagnosis (PBD) is a prominent method of disease detection in Ayurveda, the system of Indian traditional medicine. Ample anecdotal evidence suggests that for several conditions, PBD, based on sensing changes in the patient's pulse waveform, is superior to conventional allopathic diagnostic methods. PBD is an inexpensive, non-invasive, and painless method; however, a lack of quantification and standardization in Ayurveda, and a paucity of expert practitioners, has limited its widespread use. The goal of this work is to develop the first Computer-Aided Diagnosis (CAD) system able to distinguish between normal and diseased patients based on their PBD. Such a system would be inexpensive, reproducible, and facilitate the spread of Ayurvedic methods. Digitized Ayurvedic pulse signals are acquired from patients using a specialized pulse waveform recording device. In our experiments we considered a total of 50 patients. The 50 patients comprised of two cohorts obtained at different frequencies. The first cohort comprised 24 patients that were normal or diseased (slipped disc (backache), stomach ailments) while the second consists of a set of 26 patients who were nor-mal or diseased (diabetic, with skin disorders, slipped disc (backache) and stress related headaches). In this study, we consider the C-LLE scheme which non-linearly projects the high-dimensional Ayurvedic pulse data into a lower dimensional space where a consensus clustering scheme is employed to distinguish normal and abnormal waveforms. C-LLE differs from other linear and nonlinear dimensionality reduction schemes in that it respects the underlying nonlinear manifold structure on which the data lies and attempts to directly estimate the pairwise object adjacencies in the lower dimensional embedding space. A major contribution of this work is that it employs non-Euclidean similarity measures such as mutual information and relative entropy to estimate object similarity in the high-dimensional space which are more appropriate for measuring the similarity of the pulse signals. Our C-LLE based CAD scheme results in a classification accuracy of 80.57\% using relative entropy as the signal distance measure in distinguishing between normal and diseased patients for the first cohort, based on their Ayurvedic pulse signal. For the 500Hz data we got a maximum of 88.34\% accuracy with C-LLE and relative entropy as a distance measure. Furthermore, C-LLE was found to outperform LLE, Isomap, PCA across multiple distance measures for both cohorts.},
+	language = {English},
+	author = {Jog, A. and Joshi, A. and Chandran, S. and Madabhushi, A.},
+	year = {2009},
+	keywords = {C-LLE, Isomap, LLE, Mutual information, Nonlinear dimensionality reduction, Pulse diagnosis, Relative entropy, Time series analysis},
+	pages = {388--395},
+	annote = {Cited By :1},
+	file = {SCOPUS Snapshot:/Users/amod/Library/Application Support/Firefox/Profiles/fbetc59m.default/zotero/storage/BXTDBVR4/display.html:text/html}
+}
+
+@PHDTHESIS{jog2016thesis,
+	author = {Amod Jog},
+	title = {Image Synthesis in Magnetic Resonance Neuroimaging},
+	school = {The Johns Hopkins University},
+	year = {2016},
+	type = {PhD},
+	address = {Baltimore, USA},
+	month = {January}
+}

@@ -13,7 +13,7 @@
 \documentclass[11pt,a4paper,sans]{moderncv/moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{classic}                             % Only the 'classic' style is fully functional with the modifications made. The other options, 'casual' (default), 'oldstyle' and 'banking' has minor typesetting problems with the current modifications.
+\moderncvstyle{banking}                             % Only the 'classic' style is fully functional with the modifications made. The other options, 'casual' (default), 'oldstyle' and 'banking' has minor typesetting problems with the current modifications.
 \moderncvcolor{red}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 
@@ -48,13 +48,11 @@
     isbn=false,
     backref=false,
     dashed=false,                                   % Do not add a dash out authors for subsequent articles with the same authors.
-    maxnames=10,                                    % Amount of authors to include before abbreviating.
-    sorting=ydnt,
-    firstinits=true,
+    maxnames=99,                                    % Amount of authors to include before abbreviating.
+    sorting=ydnt
     ]{biblatex}                         % Sorting in reverse order
-\DeclareNameAlias{author}{last-first}
 
-\addbibresource{amod_papers_v2.bib}                   % Include your bibtex file here. Format: fileName.bib
+\addbibresource{amod_papers.bib}                   % Include your bibtex file here. Format: fileName.bib
 
 \input{biblatex_modifications/standard_modification.tex}        % Modifying the default standard.tex style of Biblatex. This modification is performed to include the moderntimeline package.
 
@@ -148,7 +146,7 @@
 \printbibliography[type=thesis,title={Thesis}]
 \printbibliography[type=article,title={Journal Publications}]
 \printbibliography[type=inproceedings,title={Conference Publications}]
-\printbibliography[type=patent,title={Patents}]
+\printbibliography[type=misc,title={Patents}]
 
 
 \input{cvitem_modifications/cvitem_moderncvclassic}
@@ -212,7 +210,7 @@
 {}{Instructor: Dr. Greg Hager
 \begin{itemize}
 \item Head teaching assistant of a undergraduate level class with 60 students
-\item Managed a team of 6 course assistants for teaching, grading, assignments and solutions formulation
+\item Managed a team of 6 course assistants for teaching, grading, formulating assignments and solutions
 \end{itemize}
 }
 \subsection{Service}
